@@ -26,6 +26,9 @@ Repositorío das atividades da materia de Aplicações Distribuídas -ADS - 2021
 2021-04-11 22:39:56.065  INFO 26860 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-11 22:39:57.105  INFO 26860 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2021-04-11 22:39:57.123  INFO 26860 --- [           main] br.edu.ifsp.Startup                      : Started Startup in 4.782 seconds (JVM running for 5.647)
+2021-04-11 22:49:06.998  INFO 26860 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-11 22:49:06.999  INFO 26860 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-11 22:49:07.020  INFO 26860 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
 
 
 ```
