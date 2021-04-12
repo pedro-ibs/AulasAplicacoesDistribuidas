@@ -3,8 +3,8 @@ Repositorío das atividades da materia de Aplicações Distribuídas -ADS - 2021
 
 
 * **Aula 03**
-    * (Atividade 1){https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula03_atv1}
-    * (Atividade 2){https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula03_atv2}
+    * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula03_atv1)
+    * [Atividade 2](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula03_atv2)
 
 ### **Saída Aula 03/Atividade 02** 
 ```
