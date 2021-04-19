@@ -20,7 +20,7 @@ public class MathController {
 		return sum;
 	}
 
-	@RequestMapping(value = "/subtraction/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double subtraction( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
 		
 		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
@@ -31,7 +31,7 @@ public class MathController {
 		return sum;
 	}
 	
-	@RequestMapping(value = "/mutiplicator/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double mutiplicator( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
 		
 		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
@@ -42,7 +42,7 @@ public class MathController {
 		return sum;
 	}
 
-	@RequestMapping(value = "/division/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double division( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
 		
 		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
@@ -53,7 +53,7 @@ public class MathController {
 		return sum;
 	}
 	
-	@RequestMapping(value = "/mean/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double mean( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
 		
 		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
