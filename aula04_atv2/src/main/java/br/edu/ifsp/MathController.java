@@ -5,74 +5,45 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.edu.ifsp.exception.UnsuportedMathOperationResponse;
+import br.edu.ifsp.operations.Sum;
 
 @RestController
 public class MathController {	
 	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double sum( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
-		
-		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
-			throw new UnsuportedMathOperationResponse(" Porvavor Entre com um valor numérico valido!");
-		}
-		
-		Double sum = this.convertToDouble(nunberOne) + this.convertToDouble(nunberTow);
-		return sum;
+		Sum sum = new Sum();
+		return sum.sum(nunberOne, nunberTow);
 	}
 
-	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/subtraction/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double subtraction( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
-		
-		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
-			throw new UnsuportedMathOperationResponse(" Porvavor Entre com um valor numérico valido!");
-		}
-		
-		Double sum = this.convertToDouble(nunberOne) - this.convertToDouble(nunberTow);
-		return sum;
+		Sum sum = new Sum();
+		return sum.sum(nunberOne, nunberTow);
 	}
 	
-	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/mutiplicator/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double mutiplicator( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
-		
-		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
-			throw new UnsuportedMathOperationResponse(" Porvavor Entre com um valor numérico valido!");
-		}
-		
-		Double sum = this.convertToDouble(nunberOne) * this.convertToDouble(nunberTow);
-		return sum;
+		Sum sum = new Sum();
+		return sum.sum(nunberOne, nunberTow);
 	}
 
-	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/division/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double division( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
-		
-		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
-			throw new UnsuportedMathOperationResponse(" Porvavor Entre com um valor numérico valido!");
-		}
-		
-		Double sum = this.convertToDouble(nunberOne) / this.convertToDouble(nunberTow);
-		return sum;
+		Sum sum = new Sum();
+		return sum.sum(nunberOne, nunberTow);
 	}
 	
-	@RequestMapping(value = "/sum/{numberOne}/{nunberTow}", method=RequestMethod.GET)
+	@RequestMapping(value = "/mean/{numberOne}/{nunberTow}", method=RequestMethod.GET)
 	public Double mean( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
-		
-		if(!this.isNumeric(nunberOne) || !this.isNumeric(nunberTow)) {
-			throw new UnsuportedMathOperationResponse(" Porvavor Entre com um valor numérico valido!");
-		}
-		
-		Double sum = (this.convertToDouble(nunberOne) + this.convertToDouble(nunberTow)/2);
-		return sum;
-	}	
+		Sum sum = new Sum();
+		return sum.sum(nunberOne, nunberTow);
+	}
 	
 	
-	@RequestMapping(value = "/sum/{numberOne}", method=RequestMethod.GET)
-	public Double squatrRoot(@PathVariable("nunberOne") String nunberOne ) throws Exception {
-		
-		if(!this.isNumeric(nunberOne)) {
-			throw new UnsuportedMathOperationResponse(" Porvavor Entre com um valor numérico valido!");
-		}
-		Double sum = Math.sqrt(this.convertToDouble(nunberOne));
-		return sum;
+	@RequestMapping(value = "/squatrRoot/{numberOne}", method=RequestMethod.GET)
+	public Double squatrRoot( @PathVariable("numberOne") String nunberOne, @PathVariable("nunberTow") String nunberTow ) throws Exception {
+		Sum sum = new Sum();
+		return sum.sum(nunberOne, nunberTow);
 	}	
 	
 	

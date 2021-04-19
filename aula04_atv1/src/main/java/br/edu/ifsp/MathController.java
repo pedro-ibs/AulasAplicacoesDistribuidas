@@ -65,7 +65,7 @@ public class MathController {
 	}	
 	
 	
-	@RequestMapping(value = "/sum/{numberOne}", method=RequestMethod.GET)
+	@RequestMapping(value = "/squatrRoot/{numberOne}", method=RequestMethod.GET)
 	public Double squatrRoot(@PathVariable("nunberOne") String nunberOne ) throws Exception {
 		
 		if(!this.isNumeric(nunberOne)) {
