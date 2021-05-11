@@ -17,6 +17,8 @@ Repositorío das atividades da materia de Aplicações Distribuídas -ADS - 2021
 * **Aula 06**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula06_atv1)
 
+* **Aula 07**
+    * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula07_atv1)
     
 ### **Saída Aula 03/Atividade 02** 
 ```
