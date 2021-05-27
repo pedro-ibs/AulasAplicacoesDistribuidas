@@ -18,12 +18,8 @@ public class Book implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	
 	@Column(name = "title", nullable = false, length = 80)
 	private String title;
-	
-	@Column(name = "subtitle", nullable = false, length = 80)
-	private String subtitle;
 	
 	@Column(name = "author", nullable = false, length = 80)
 	private String author;
@@ -33,12 +29,21 @@ public class Book implements Serializable {
 	
 	@Column(name = "year", nullable = false, length = 80)
 	private String year;
+
+	@Column(name = "id_category", nullable = false)
+	private Long idCategory;
 	
 	@Column(name = "number", nullable = false, length = 80, unique = true)
 	private String number;
 	
-	@Column(name = "id_category", nullable = false)
-	private Long idCategory;
+	@Column(name = "pages", nullable = false)
+	private Integer pages;
+
+	@Column(name = "image", nullable = false, length = 100, unique = true)
+	private String image;
+	
+	@Column(name = "description", nullable = false, length = 300, unique = true)
+	private String description;
 
 	public Long getId() {
 		return id;
@@ -54,14 +59,6 @@ public class Book implements Serializable {
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-	public String getSubtitle() {
-		return subtitle;
-	}
-
-	public void setSubtitle(String subtitle) {
-		this.subtitle = subtitle;
 	}
 
 	public String getAuthor() {
@@ -88,14 +85,6 @@ public class Book implements Serializable {
 		this.year = year;
 	}
 
-	public String getNumber() {
-		return number;
-	}
-
-	public void setNumber(String number) {
-		this.number = number;
-	}
-
 	public Long getIdCategory() {
 		return idCategory;
 	}
@@ -104,16 +93,50 @@ public class Book implements Serializable {
 		this.idCategory = idCategory;
 	}
 
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	public Integer getPages() {
+		return pages;
+	}
+
+	public void setPages(Integer pages) {
+		this.pages = pages;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((author == null) ? 0 : author.hashCode());
+		result = prime * result + ((description == null) ? 0 : description.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((idCategory == null) ? 0 : idCategory.hashCode());
+		result = prime * result + ((image == null) ? 0 : image.hashCode());
 		result = prime * result + ((number == null) ? 0 : number.hashCode());
+		result = prime * result + ((pages == null) ? 0 : pages.hashCode());
 		result = prime * result + ((publishingCompany == null) ? 0 : publishingCompany.hashCode());
-		result = prime * result + ((subtitle == null) ? 0 : subtitle.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		result = prime * result + ((year == null) ? 0 : year.hashCode());
 		return result;
@@ -133,6 +156,11 @@ public class Book implements Serializable {
 				return false;
 		} else if (!author.equals(other.author))
 			return false;
+		if (description == null) {
+			if (other.description != null)
+				return false;
+		} else if (!description.equals(other.description))
+			return false;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -143,20 +171,25 @@ public class Book implements Serializable {
 				return false;
 		} else if (!idCategory.equals(other.idCategory))
 			return false;
+		if (image == null) {
+			if (other.image != null)
+				return false;
+		} else if (!image.equals(other.image))
+			return false;
 		if (number == null) {
 			if (other.number != null)
 				return false;
 		} else if (!number.equals(other.number))
 			return false;
+		if (pages == null) {
+			if (other.pages != null)
+				return false;
+		} else if (!pages.equals(other.pages))
+			return false;
 		if (publishingCompany == null) {
 			if (other.publishingCompany != null)
 				return false;
 		} else if (!publishingCompany.equals(other.publishingCompany))
-			return false;
-		if (subtitle == null) {
-			if (other.subtitle != null)
-				return false;
-		} else if (!subtitle.equals(other.subtitle))
 			return false;
 		if (title == null) {
 			if (other.title != null)
@@ -170,7 +203,7 @@ public class Book implements Serializable {
 			return false;
 		return true;
 	}
-	
+
 	
 
 }

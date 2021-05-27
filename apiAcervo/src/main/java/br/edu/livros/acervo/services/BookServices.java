@@ -34,12 +34,16 @@ public class BookServices {
 	
 	public BookVO update(BookVO book) {
 		var entity = repository.findById(book.getId()).orElseThrow(() -> new ResourceNotFoundException ("Não encontramos registros para este ID"));
+
 		entity.setTitle(book.getTitle());
-		entity.setSubtitle(book.getSubtitle());
+		entity.setAuthor(book.getAuthor());
 		entity.setPublishingCompany(book.getPublishingCompany());
 		entity.setYear(book.getYear());
-		entity.setNumber(book.getNumber());
 		entity.setIdCategory(book.getIdCategory());
+		entity.setNumber(book.getNumber());
+		entity.setPages(book.getPages());	
+		entity.setImage(book.getImage());
+		entity.setDescription(book.getDescription());
 		
 		var vo = DozerConverter.parseObject(repository.save(entity), BookVO.class);
 		return vo;
