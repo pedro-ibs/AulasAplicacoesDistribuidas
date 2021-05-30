@@ -39,10 +39,10 @@ public class Book implements Serializable {
 	@Column(name = "pages", nullable = false)
 	private Integer pages;
 
-	@Column(name = "image", nullable = false, length = 100, unique = true)
+	@Column(name = "image", nullable = false, length = 100)
 	private String image;
 	
-	@Column(name = "description", nullable = false, length = 300, unique = true)
+	@Column(name = "description", nullable = false, length = 300)
 	private String description;
 
 	public Long getId() {
