@@ -23,6 +23,9 @@ Repositorío das atividades da materia de Aplicações Distribuídas -ADS - 2021
 * **Aula 09**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula09_atv1)
     
+* **Aula 010**
+    * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula010_atv1)
+    
 * **Projeto P1 - CRUD em REST**
     * [apiAcervo](https://github.com/pedro-ibs/projeto01AplicacoesDistribuidas)
 
