@@ -2,34 +2,41 @@
 Repositorío das atividades da materia de Aplicações Distribuídas -ADS - 2021
 
 
-* **Aula 03**
+* **Aula 03 Inicializando um Projeto Spring Boot**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula03_atv1)
     * [Atividade 2](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula03_atv2)
 
     
-* **Aula 04**
+* **Aula 04 Implementando uma Calculadora**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula04_atv1)
     * [Atividade 2](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula04_atv2)
 
-* **Aula 05**
+* **Aula 05 Implementando os verbos HTTP**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula05_atv1)
 
-* **Aula 06**
+* **Aula 06 Conexão com o banco de dados**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula06_atv1)
 
-* **Aula 07**
+* **Aula 07 Padrão de Projeto V.O. - Value Object**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula07_atv1)
 
-* **Aula 09**
+* **Aula 09 Migrations e Custon Json**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula09_atv1)
     
-* **Aula 010**
+* **Aula 010 Content Negotiation**
     * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula010_atv1)
-    
+
+* **Aula 011 HATEOAS**
+    * [Atividade 1](https://github.com/pedro-ibs/AulasAplicacoesDistribuidas/tree/main/aula011_atv1)
+    * [Norma RFC5988](https://datatracker.ietf.org/doc/html/rfc5988)
+        
 * **Projeto P1 - CRUD em REST**
     * [apiAcervo](https://github.com/pedro-ibs/projeto01AplicacoesDistribuidas)
 
-    
+* **Projeto P2 - Avaliação Final**
+    * [apiAcervo](https://github.com/pedro-ibs/projeto02AplicacoesDistribuidas)
+
+
   
 
 
